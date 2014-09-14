@@ -91,3 +91,12 @@ $(function() {
 
     $('figure.responsive-image').picture();
 });
+
+// Slideshow change
+$(".slideshow").on('click', 'li', function() {
+	var imageUrl = $(this).attr('data-image');
+
+	$(this).parent().find("li").removeClass("selected");
+	$(this).addClass("selected");
+	$(this).parent().prev().find("div").css('background-image', 'url("' + imageUrl + '")');
+});
