@@ -660,6 +660,7 @@ ul.slideshow {
     padding-left: 0;
     white-space: nowrap;
     width: 85%;
+    -webkit-overflow-scrolling: touch;
 }
 
 ul.slideshow li {
